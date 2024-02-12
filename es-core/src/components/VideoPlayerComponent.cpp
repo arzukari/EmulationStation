@@ -159,7 +159,7 @@ void VideoPlayerComponent::startVideo()
 				// We need to specify the layer of 10000 or above to ensure the video is displayed on top
 				// of our SDL display
 
-				const char* argv[] = { "", "--layer", "10010", "--loop", "--no-osd", "--aspect-mode", "letterbox", "--vol", "0", "-o", "both","--win", buf1, "--orientation", buf2, "", "", "", "", "", "", "", "", "", "", "", NULL };
+				const char* argv[] = { "", "--layer", "10010", "--no-osd", "--aspect-mode", "letterbox", "--vol", "0", "-o", "both","--win", buf1, "--orientation", buf2, "", "", "", "", "", "", "", "", "", "", "", NULL };
 
 				// check if we want to mute the audio
 				if ((!Settings::getInstance()->getBool("VideoAudio") || (float)VolumeControl::getInstance()->getVolume() == 0) ||
